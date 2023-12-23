@@ -1,0 +1,322 @@
+header {
+    .nav-top {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.196);
+
+        .nav-top-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-top-right {
+                display: flex;
+                align-items: center;
+
+                .nav-num {
+                    margin: 0 !important;
+                }
+
+                .nav-iconn {
+                    margin: 0 0 0 10px !important;
+                    padding: 30px 33px;
+                    background-color: #F6214B;
+
+                    i {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-bottom {
+
+        .nav-logo-img {
+            width: 150px;
+        }
+
+        .tgBtn {
+            padding: 0 !important;
+            border: 0 !important;
+            box-shadow: none !important;
+
+        }
+
+        .nav-menuu {
+            justify-content: center !important;
+        }
+
+        .nav-link {
+            text-transform: uppercase;
+            font-size: 12px !important;
+            font-weight: 700;
+        }
+
+        .nav-brand {
+            display: none;
+        }
+    }
+
+}
+
+
+#sec-hero {
+    background: url("/assets/img/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    padding: 80px 0;
+
+    .container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .sec-hero-content {
+            padding: 60px 0;
+
+            .sec-hero-text-content {
+                padding: 80px 0;
+                text-align: center;
+
+                h2 {
+                    font-size: 45px;
+                    font-weight: 700;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+#sec-about {
+    padding: 40px 0;
+
+    .sec-about-content {
+        padding: 40px 0;
+
+        .sec-about-main-text {
+            text-align: center;
+        }
+
+        .sec-about-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+
+            .cardBox {
+                width: 360px;
+                button{
+                    background-color: rgb(192, 9, 9);
+                    border: 2px solid  rgb(227, 3, 70) ;
+                    color: #fff;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .loadBtnDiv{
+            text-align: center;
+            padding-top: 90px;
+            button{
+                width: 180px;
+                height: 45px;
+                border-radius: 25px;
+                border: 2px solid rgb(195, 0, 0);
+                color: #fff;
+                background-color: #db002c;
+            }
+        }
+    }
+}
+.getForm{
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+#sec-courses {
+    padding: 60px 0;
+
+    .courses-content {
+        padding: 20px 0;
+
+        .courses-main-text {
+            text-align: center;
+        }
+
+        .courses-cards {
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+
+            .cardd {
+                position: relative;
+
+                .imgDiv {
+                    button {
+                        position: absolute;
+                        left: 5%;
+                        top: 55%;
+                        border: 0;
+                        outline: 0;
+                        background-color: #F6214B;
+                        color: #fff;
+                        width: 180px;
+                        height: 42px;
+                    }
+                }
+
+                .textDiv {
+                    padding: 20px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#sec-transaction {
+    background: url("/assets/img/callto-bg.jpg");
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .transaction-content {
+        padding: 40px 0;
+
+        .transaction-text-content {
+            padding: 40px 0;
+            text-align: center;
+            color: #fff;
+
+            button {
+                border-radius: 25px;
+                background-color: #F6214B;
+                color: #fff;
+                width: 180px;
+                height: 45px;
+                border: 0;
+            }
+        }
+    }
+}
+
+
+footer {
+    padding: 60px 0;
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        div {
+            padding: 0 !important;
+            p {
+                margin: 0 !important;
+                text-align: center;
+            }
+
+            ul {
+                display: flex;
+                gap: 10px;
+                li{
+                    list-style: none;
+                    background-color: #111111;
+                    padding: 4px 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media screen and (min-width:0) and (max-width:991px) {
+    header {
+        .nav-bottom {
+            .nav-brand {
+                display: block;
+            }
+        }
+
+        .nav-top {
+            display: none;
+        }
+    }
+
+
+    #sec-hero {
+        padding: 40px 0;
+
+        .container {
+            .sec-hero-content {
+                .sec-hero-text-content {
+                    h2 {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    #sec-courses {
+        .courses-content {
+            .courses-cards {
+                .cardd {
+                    width: 270px;
+
+                    .imgDiv {
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+
+                        button {
+                            position: absolute;
+                            left: 5%;
+                            top: 47%;
+                            width: 140px;
+                            height: 36px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
